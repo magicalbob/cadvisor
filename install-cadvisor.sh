@@ -25,6 +25,9 @@ kubectl apply -f cluster/cadvisor/prometheus-service.yml
 # create the prometheus datasource for grafana
 kubectl apply -f cluster/cadvisor/grafana-datasource-config.yml
 
+# create the grafana dashboards
+kubectl apply -f cluster/cadvisor/grafana-dashboards.yaml
+
 # create deployment of grafana
 kubectl apply -f cluster/cadvisor/grafana-deployment.yml
 

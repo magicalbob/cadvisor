@@ -34,10 +34,10 @@ kubectl apply -f cluster/cadvisor/grafana-deployment.yml
 # create the grafana-server
 kubectl apply -f cluster/cadvisor/grafana-service.yml
 
-# now in grafana ui, import the dashboard 14282 - need to find out how to
-# do this in code!
-
 # show the deployments and the pods - `grafana` and `prompetheus-deployment`
 # should be listed.
 kubectl get deployments -n cadvisor
 kubectl get pods -n cadvisor
+
+# now import the dashboard 14282 in code! Default login is admin/admin - need to sort that! 
+./grafana-dashboard-install.sh admin admin 14282

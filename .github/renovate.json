@@ -1,0 +1,5 @@
+{
+  "extends": ["config:base"],
+  "enabledManagers": ["dockerfile", "docker-compose"],
+  "onboarding": "false"
+}
